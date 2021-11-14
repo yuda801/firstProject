@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="loadTasks()">
+
+
+
+    <header>
+        <p id="head-line">my task board</p>
+        <button id="resetInformation" onclick="resetData()">delete all tasks</button>
+    </header>
+    <div class="form">
+        <div class="form-group">
+            <label for="task-content-input">enter new task:</label><br>
+            <textarea id="task-content-input" name="task-content-input" rows="4" cols="42">write here</textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="due-date-input"> due date: </label>
+            <input type="date" id="due-date-input" name="due-date-input" value="2010-10-10">
+        </div>
+
+        <div class="form-group">
+            <label for="due-time-input"> due time:</label>
+            <input type="time" id="due-time-input" name="due-time-input" value="09:24">
+        </div>
+
+        <div class="buttons-div ">
+            <button type="button" class="btn btn-info" onclick="addNewTask()">save</button>
+            <button type="button" class="btn btn-warning" onclick="resetInput()">reset</button>
+        </div>
+    </div>
+    <br /><br />
+
+    <!-- used by js to add tasks-->
+    <div id="cards-div" class="style fade-in">
+        <!-- <div class="task-note ">
+            <button type="button " class="close ">
+                <span class="spn ">&times;</span>
+            </button>
+            <p class="text-output ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo laboriosam quam cum velit nihil. Adipisci laborum placeat blanditiis corporis quam fuga magnam quia iste aliquam accusantium molestiae inventore alias explicabo nesciunt reiciendis,
+                pariatur tempora minus esse totam nam architecto maiores minima dolorem? Odit temporibus, nesciunt deserunt, ratione aut omnis, alias in ex dolore quaerat tenetur labore earum? Ad, exercitationem. Error dolor repellat rem voluptatum maiores
+                qui dolore laudantium perferendis perspiciatis, dolorum voluptate tempora placeat nihil illo ratione impedit culpa iste sit, et voluptates sunt, incidunt quo laborum. Fugiat facere atque doloremque exercitationem corporis impedit minus.
+                Pariatur animi cum voluptatibus facere.
+            </p>
+            <time class="time-output ">09-13</time>
+        </div> -->
+    </div>
+
+
+
+
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>

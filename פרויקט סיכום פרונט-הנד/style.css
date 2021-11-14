@@ -1,0 +1,180 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url('tile.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: brown;
+}
+
+header {
+    display: flex;
+    max-width: 80%;
+    min-width: 370px;
+    margin: auto;
+}
+
+#resetInformation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 20px auto;
+}
+
+#head-line {
+    text-align: center;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: ivory;
+    font-family: 'Brush Script MT', cursive;
+    text-shadow: 2px 1.5px green;
+    font-size: 4.5em;
+}
+
+@media screen and (max-width: 600px) {
+    #head-line {
+        font-size: 3em;
+    }
+}
+
+textarea,
+input {
+    opacity: 70%;
+    border-radius: 10%;
+}
+
+.form {
+    width: fit-content;
+    padding: 0px 20px 10px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align-last: center;
+    background-image: url(formbg.jpg);
+    background-attachment: unset;
+    background-repeat: repeat-y;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+label {
+    background-color: antiquewhite;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.buttons-div {
+    width: fit-content;
+    align-self: center;
+    display: block;
+}
+
+#cards-div {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 15px auto;
+    /* background: repeating-linear-gradient( 105deg, black, transparent 100px); */
+    background: radial-gradient(rgb(172, 164, 164), transparent);
+}
+
+.task-note {
+    width: 320px;
+    height: 400px;
+    padding: 20px 20px 10px 10px;
+    margin: 25px;
+    background-image: url('noteb-g.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    filter: brightness(80%);
+    filter: grayscale(80%);
+    border-radius: 35px !important;
+}
+
+.close {
+    text-align-last: right;
+    visibility: hidden;
+    position: relative;
+    right: 20px;
+    top: 10px;
+    margin-bottom: 20px;
+}
+
+.task-note:hover .close {
+    visibility: visible;
+    outline: none;
+}
+
+.text-output {
+    height: 80%;
+    overflow: auto;
+}
+
+.fade-in {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
